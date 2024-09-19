@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "CodeSnippetController",
+    "Method": "GetCodeSnippet",
+    "RelativePath": "api/CodeSnippet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeSnippetController",
+    "Method": "SaveCodeSnippet",
+    "RelativePath": "api/CodeSnippet/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codeSnippet",
+        "Type": "SuperbaseServices\u002BCodeSnippet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
