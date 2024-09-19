@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c28c9fbc32e623d8c87b18fe9a200723dd66be4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
