@@ -20,6 +20,9 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("https://code-snippet-sharing-web.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod();
+        policy.WithOrigins("http://localhost:3000/")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
