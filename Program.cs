@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontendApp", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("https://code-snippet-sharing-web.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
