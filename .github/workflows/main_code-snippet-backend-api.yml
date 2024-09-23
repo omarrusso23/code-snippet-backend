@@ -55,5 +55,5 @@ jobs:
         with:
           app-name: 'code-snippet-backend-api'
           slot-name: 'Production'
-          package: './publish'  # Point to the published folder
+          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29EB426BE217483EA9B0D7C436B80923 }}
