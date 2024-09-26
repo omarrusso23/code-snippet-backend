@@ -11,6 +11,7 @@ Console.WriteLine($"API Key: {Environment.GetEnvironmentVariable("SUPABASE_API_K
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddSingleton<SuperbaseServices>();
+builder.Services.AddSingleton<JDoodleCompilerService>();
 
 // Add CORS policy
 builder.Services.AddCors(options =>
@@ -20,7 +21,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("https://code-snippet-sharing-web.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod();
-        policy.WithOrigins("http://localhost:3000/")
+        policy.WithOrigins("http://localhost:3000")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
