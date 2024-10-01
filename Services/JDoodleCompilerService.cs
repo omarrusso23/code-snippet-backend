@@ -36,7 +36,16 @@ public class JDoodleCompilerService
 
         if (!response.IsSuccessStatusCode)
         {
-            throw new Exception($"Error compiling code: {responseBody}");
+            dynamic errorResponse = JsonConvert.DeserializeObject(responseBody);
+
+            if (errorResponse?.error == "Daily limit reached")
+            {
+                throw new Exception("Daily limit reached. Please try again later.");
+            }
+            else
+            {
+                throw new Exception($"Error compiling code: {responseBody}");
+            }
         }
 
         return responseBody;
